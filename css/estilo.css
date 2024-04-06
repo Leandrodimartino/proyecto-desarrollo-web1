@@ -93,7 +93,6 @@ h2{
     padding: 1%;
 }
 
-
 .iconos-footer{
     width: 2.8125rem;
     height: 2.8125rem;
@@ -709,6 +708,12 @@ main{
 
     h2{
         font-size: 1rem;
+    }
+
+    .subtitle-principal{
+        margin-bottom: 6.25rem;
+        margin-top: 6.25rem;
+        line-height: 2rem;
     }
 
     .parrafos-pag{
