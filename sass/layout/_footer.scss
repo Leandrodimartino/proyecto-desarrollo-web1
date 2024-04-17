@@ -1,0 +1,22 @@
+footer{
+    background-color:map-get($colores, colorFondoSecundario);
+    padding: .3125rem;
+    .list-footer{
+        @include flex;
+        gap: 5rem;
+        padding: 2%;
+        justify-content: center;
+        li{
+            a{
+                img{
+                    width: 2.8125rem;
+                    height: 2.8125rem;
+                }
+            }
+        }
+    }
+    .p-footer{
+        font-size: .9375rem;
+        text-align: center;
+    }
+}

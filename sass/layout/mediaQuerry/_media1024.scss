@@ -1,0 +1,54 @@
+@media (max-width:1024px){
+    header{
+        .img-header{ 
+            width: 8.125rem;
+            height: 5.625rem;
+        }
+        nav{
+            .list-nav{
+                gap:.9375rem;
+                li{
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    main{
+        h1{
+            font-size:1.875rem;
+        }
+        h2{
+            font-size:1.5625rem;
+        }
+    }
+
+    .div-grid-contacto{
+        height: 37.5rem;
+        .div-parrafo-contacto{
+            width: 25rem;
+            padding: 1.875rem;
+            margin-top: 3.125rem;
+        }
+        .div-ul-contacto{
+            width: 25rem;
+            margin-bottom: 3.4375rem;
+        }
+        .ul-contacto{
+            gap: 3.75rem;
+        }
+        .form-contacto{
+            width:18.75rem;
+            height: 31.25rem;;
+            padding: .9375rem;
+            margin: auto;
+            border-radius: 1.5625rem;
+            .contact{
+                margin-bottom: 3.125rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/*utilities*/
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*archivos de base*/
+@import "./base/reset";
+
+/*layout*/
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/form";
+@import "./layout/footer";
+@import "./layout/gridcontacto";
+
+/*components*/
+
+@import "./components/divboton";
+@import "./components/transition";
+@import "./components/animaciones";
+
+/*medias*/
+
+@media(max-width:1024px){
+    @import "./layout/mediaQuerry/media1024";
+}
+
+@media(max-width:890px){
+    @import "./layout/mediaQuerry/media890";
+}
+
+@media(max-width:768px){
+    @import "./layout/mediaQuerry/media768";
+}
+
+@media(max-width:590px){
+    @import "./layout/mediaQuerry/media590";
+}
+
+@media(max-width:425px){
+    @import "./layout/mediaQuerry/media425";
+}
+
+@media (max-width: 320px){
+@import "./layout/mediaQuerry/media320";
+}
+
+
+/*modificar boton y agregar mixin falta*/
+
+
+
+
+

@@ -1,804 +1,569 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*utilities*/
+/*archivos de base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-nav {
-    background-color:black;
-    padding: 0;
-}
+body {
+  background-color: black;
+  background-image: linear-gradient(to bottom, #000000, #040404, #080809, #0c0d0d, #0f1010, #0f1010, #0f1010, #0f1010, #0c0d0d, #080809, #040404, #000000); }
 
-.list-nav{
-    display: flex;
-    gap: 1.875rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.list-nav li a:hover{
-    text-decoration: underline;
-    color: white;
-}
-
-.list-nav li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1.75rem;
-    list-style: none;
-}
-
-header{
-    border: 2px solid grey;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    justify-content:center;
-    align-items: center;
-    padding-right: 30px;
-    position: sticky;
-    top: 0;
-}
-
-
-.img-header{
+/*layout*/
+header {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid grey;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0; }
+  header .img-header {
     height: 6.875rem;
-    width: 9.375rem;
-}
+    width: 9.375rem; }
+  header nav {
+    background-color: black;
+    padding: 0; }
+    header nav .list-nav {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 1.875rem;
+      padding: 0;
+      margin: 0; }
+      header nav .list-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.75rem;
+        list-style: none; }
+        header nav .list-nav li a:hover {
+          text-decoration: underline;
+          color: grey; }
 
-.parrafos-pag{
+main {
+  margin-bottom: 1.875rem; }
+  main h1 {
     text-align: center;
-    font-size: 1.5625rem;
-    color: white;
-}
-
-.img-1{
-    text-align: center;
-    width: 100%;
-    height: 43.75rem;
-    padding: 2%;
-}
-
-.img-1 img{
-    height: 100%;
-    width: 70%;
-    border: 3px solid grey;
-}
-
-.div-iframe{
-    text-align: center;
-    width: 100%;
-}
-
-.div-iframe iframe{
-    padding-bottom: 3%;
-}
-
-h1{
-    font-size: 2.5rem;
     background-color: grey;
-    padding: 2%;
-}
-
-h2{
+    color: black;
+    padding: 1.25rem; }
+  main h2 {
+    text-align: center;
     color: white;
     font-size: 1.875rem;
     text-align: center;
-    padding: 1%;
-}
-
-.iconos-footer{
-    width: 2.8125rem;
-    height: 2.8125rem;
-}
-
-.div-button{
+    margin: 1.875rem; }
+  main .img-1 {
     text-align: center;
-}
-
-.button-link{
-    padding: .625rem;
-    background-color: grey;
-    border-radius: 1.25rem;
-}
-
-.button-link a{
-    color: black;
-}
-
-.link-whatsapp{
-    color: white;
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-
-.link-whatsapp:hover{
-    text-decoration: underline;
-    color: white;
-}
-
-footer{
-    background-color: grey;
-    padding: .3125rem;
-}
-
-.p-footer{
-    font-size: .9375rem;
+    width: 100%;
+    height: 37.5rem;
+    padding: 2%; }
+    main .img-1 img {
+      height: 100%;
+      width: 70%;
+      border: 3px solid grey; }
+  main .parrafos-pag {
     text-align: center;
-}
+    font-size: 1.5625rem;
+    color: white; }
+  main .div-iframe {
+    text-align: center;
+    width: 100%;
+    margin-bottom: .1875rem; }
+    main .div-iframe iframe {
+      width: 70%;
+      margin-top: 1.25rem; }
 
-.list-footer{
-    display: flex;
-    list-style: none;
-    gap: 5rem;
-    padding: 2%;
-    justify-content: center;
-}
+.div-grid-contacto .div-parrafo-contacto {
+  background-color: grey;
+  width: 31.25rem;
+  height: 15.625rem;
+  padding: 2.5rem;
+  margin: auto;
+  margin-top: 3.125rem;
+  border-radius: 1.5625rem; }
+  .div-grid-contacto .div-parrafo-contacto p {
+    font-size: 1.5rem;
+    text-align: center; }
 
-.div-parrafo-contacto{
-    background-color: grey;
-    width: 31.25rem;
-    height: 15.625rem;
-    padding: 2.5rem;
-    margin: auto;
-    margin-bottom: .625rem;
-    border-radius: 1.5625rem;
-}
-
-.div-parrafo-contacto p{
-    font-size: 1.375rem;
-    text-align:center;
-}
-
-.ul-contacto{ 
-    background-color: grey;
-    display: flex;
-    list-style: none;
-    gap: 5.625rem;
-    justify-content: center;
-    padding: 0;
-}
-
-.div-ul-contacto{
-    background-color: grey;
-    width: 31.25rem;
-    height: 9.375rem;
-    margin: auto;
-    padding: 1.875rem;
-    border-radius: 1.5625rem;
-}
-
-.div-ul-contacto h4{
+.div-grid-contacto .div-ul-contacto {
+  background-color: grey;
+  width: 31.25rem;
+  height: 9.375rem;
+  margin: auto;
+  margin-bottom: 3.4375rem;
+  padding: 1.875rem;
+  border-radius: 1.5625rem; }
+  .div-grid-contacto .div-ul-contacto h4 {
     font-size: 1.625rem;
     text-align: center;
     text-decoration: underline;
-    margin-bottom: .9375rem;
-}
+    margin-bottom: .9375rem; }
 
+.div-grid-contacto .ul-contacto {
+  background-color: grey;
+  display: flex;
+  list-style: none;
+  gap: 5.625rem;
+  justify-content: center; }
+  .div-grid-contacto .ul-contacto li a .iconos-footer {
+    width: 2.8125rem;
+    height: 2.8125rem; }
 
-.form-contacto{
-    width: 23.75rem;
-    background-color: rgb(128, 128, 128);
-    padding: 1.875rem;
-    margin: auto;
-    border-radius: 1.5625rem;
-}
-
-.form-contacto .contact{
+.div-grid-contacto .form-contacto {
+  width: 23.75rem;
+  height: 31.25rem;
+  background-color: grey;
+  padding: 1.875rem;
+  margin: auto;
+  border-radius: 1.5625rem; }
+  .div-grid-contacto .form-contacto h4 {
+    text-align: center;
+    text-decoration: underline;
+    height: 4.375rem;
+    font-size: 1.5rem; }
+  .div-grid-contacto .form-contacto .contact {
     width: 100%;
     padding: .625rem;
     border-radius: .625rem;
-    margin-bottom: 1rem;
-    border: 1px solid black;
-}
-
-.form-contacto h4{
-    text-align: center;
-    text-decoration: underline;
-    height: 2.5rem;
-    font-size: 1.5rem;
-}
-
-.form-contacto .boton{
+    margin-bottom: 2.8125rem;
+    border: 1px solid black; }
+  .div-grid-contacto .form-contacto .boton {
     width: 100%;
     border: 1px solid black;
     color: black;
     padding: .625rem;
     background-color: grey;
-    border-radius: .625rem;
-}
-
-.parrafo-campeonato{
-    border-radius: 15px;
-    width: 90%;
-    margin:auto;
-}
-
-main{
-    margin-bottom: 3%;
-}
-
-
-.div-grid-contacto{
-    display: grid;
-    width: 100%;
-    height: 42.5rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-"div1 div1 div3 div3"
-"div1 div1 div3 div3"
-"div2 div2 div3 div3"
-"div2 div2 div3 div3";
-}
-
-.div-parrafo-contacto{
-    grid-area: div1;
-}
-
-.div-ul-contacto{
-    grid-area: div2;
-}
-
-.form-contacto{
-    grid-area: div3;
-}
-
-@media (max-width:1024px){
-
-    .img-header{ 
-        width: 8.125rem;
-        height: 5.625rem;
-    }
-
-    .list-nav{
-        gap:.9375rem;
-    }
-
-    .list-nav li a{
-        font-size: 1.5rem;
-    }
-
-    h1{
-        font-size:1.875rem;
-    }
-
-    h2{
-        font-size:1.5625rem;
-    }
-
-    .div-grid-contacto{
-        height: 37.5rem;
-    }
-
-    .div-parrafo-contacto{
-        width: 25rem;
-        padding: .625rem;
-        margin-top: 3.125rem;
-    }
-
-    .div-ul-contacto{
-        width: 25rem;
-        margin-bottom: 3.4375rem;
-    }
-    
-
-    .ul-contacto{
-        gap: 3.75rem;
-    }
-
-    .form-contacto{
-        width:18.75rem;
-        height: 31.25rem;
-        background-color: rgb(128, 128, 128);
-        padding: .9375rem;
-        margin: auto;
-        border-radius: 1.5625rem;
-    }
-}
-
-@media (max-width: 890px){
-    .img-header{ 
-        width: 8.125rem;
-        height: 5.625rem;
-    }
-    
-    .list-nav{
-        gap:.9375rem;
-    }
-    
-    .list-nav li a{
-        font-size: 1.3125rem;
-    }
-    
-    h1{
-        font-size:1.6875rem;
-    }
-    
-    h2{
-        font-size:1.4375rem;
-    }
-    
-    .div-parrafo-contacto{
-        width: 21.875rem;
-        padding: .625rem;
-        margin-bottom: 4px;
-    }
-    
-    .div-ul-contacto{
-        width: 21.875rem;
-        margin-bottom: 3.125rem;
-    }
-    
-        .ul-contacto{
-            gap: 3.75rem;
-    }
-    
-    .form-contacto{
-        width:16.875rem;
-        height: 31.25rem;
-        background-color: rgb(128, 128, 128);
-        padding: .9375rem;
-        margin: auto;
-        border-radius: 1.5625rem;
-    }
-}
-
-@media (max-width: 768px){
-
-    .img-header{ 
-        width: 6.25rem;
-        height: 4.6875rem;
-    }
-    
-
-    .list-nav{
-        gap: .9375rem;
-    }
-
-    .list-nav li a{
-        font-size: 1.125rem;
-    }
-
-    h1{
-        font-size:1.5625rem;
-    }
-
-    h2{
-        font-size: 1.25rem;
-    }
-
-    
-    .img-1 img{
-        height: 25rem;
-    }
-
-    .img-1{
-        height: 28.125rem;
-        width: 100%;
-}
-
-    .iconos-footer{
-        width: 2.1875rem;
-        height: 2.1875rem;
-    }
-
-    .parrafos-pag{
-        font-size: 1.125rem;
-    }
-
-    .link-whatsapp{
-        font-size: 1.125rem;
-    }
-
-    .div-grid-contacto{
-        height: 31.25rem;
-    }
-
-    .form-contacto{
-        width: 15.625rem;
-        height: 25.625rem;
-        background-color: rgb(128, 128, 128);
-        padding: 1.25rem;
-        border-radius: 1.5625rem;
-        margin: auto;
-    }
-
-    .form-contacto .contact{
-        padding: 0;
-    }
-
-    .div-ul-contacto{
-        background-color: grey;
-        width: 15.625rem;
-        height: 7.5rem;
-        padding: 1.25rem;
-        border-radius: 1.5625rem;
-    }   
-
-    .ul-contacto{gap:3.125rem;
-    }
-
-    .div-parrafo-contacto{
-        background-color: grey;
-        width: 15.625rem;
-        height:15rem;
-        padding: .625rem;
-        border-radius: 1.5625rem;
-        margin-top: 2.625rem;
-    }
-
-    .div-parrafo-contacto p{
-        font-size: 1.125rem;
-        margin: 0;
-    }
-
-
-    .parrafo-campeonato{
-        border-radius: .3125rem;
-}
-
-    .parrafos-pag{
-        margin: .3125rem;
-        font-size: 1.25rem
-    }
-
-    iframe{width:70%}
-}
-
-@media (max-width:590px){
-    header {
-        flex-direction: column;
-        background-color: black;
-        align-items: center;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding: 0;
-    }
-
-    .list-nav{
-        gap: .5rem;
-    }
-
-    .list-nav li a{
-        font-size: .9375rem;
-    }
-
-    h1{
-        font-size: 18px;
-    }
-
-    h2{
-        font-size: 1.25rem;
-    }
-
-    .img-1{
-        height:25rem;
-        width: 100%;
-        padding: 0;
-    }
-
-    .img-1 img{
-        height: 25rem;
-        width:100%;
-        border: none;
-    }
-
-    .iconos-footer{
-        width: 2.1875rem;
-        height: 2.1875rem;
-    }
-
-    .parrafos-pag{
-        font-size: 1.125rem;
-    }
-
-    .link-whatsapp{
-        font-size: 1.125rem;
-    }
-
-    .parrafo-campeonato{
-        border-radius: .3125rem;
-}
-
-    .parrafos-pag{
-        margin: .3125rem;
-        font-size: 1.25rem;
-    }
-
-    iframe{
-        width:70%;
-    }
-
-    .div-grid-contacto{
-        display: block;
-        height: 50rem;
-    }
-
-    .div-parrafo-contacto{
-        background-color: grey;
-        width: 90%;
-        height: 11.25rem;
-        padding: 1.25rem;
-        margin: auto;
-        border-radius: .625rem;
-    }
-
-    .div-ul-contacto{
-        background-color: grey;
-        width: 70%;
-        height: 6.25rem;
-        margin: auto;
-        margin-top: 1.25rem;
-        padding: .3125rem;
-        border-radius: .625rem;
-        margin-top: .625rem;
-    }
-
-    .form-contacto{
-        width: 70%;
-        height: 28.125rem;
-        background-color: rgb(128, 128, 128);
-        padding: 1.875rem;
-        margin: auto;
-        margin-top: 1.25rem;
-        border-radius: .625rem;
-    }
-
-    .list-footer {
-        gap: 1.25rem;
-    }
-}
-
-@media (max-width:425px){
-    header {
-        flex-direction: column;
-        background-color: black;
-        align-items: center;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding: 0;
-    } 
-
-    .img-header{
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .list-nav{
-        gap: .6875rem;
-    }
-
-    .list-nav li a {
-        font-size: .75rem;
-    }
-
-    h1{
-        font-size: 1rem;
-    }
-
-    h2{
-        font-size: .875rem;
-    }
-
-    .parrafos-pag{
-        font-size: .875rem;
-    }
-
-    .img-1{
-        height:16.25rem;
-        width: 100%;
-        padding: 0;
-    }
-
-    .img-1 img{
-        height: 15rem;
-        width:100%;
-        border: none;
-    }
-
-    .link-whatsapp{
-        font-size: .75rem;
-    }
-
-    iframe{
-        width: 100%;
-        height: 12.5rem;
-        padding-bottom: none;
-    }
-
-    .parrafo-campeonato{
-        border-radius: .3125rem;
-    }
-
-    .list-footer {
-        display: flex;
-        list-style: none;
-        gap: .625rem;
-        padding: 2%;
-        justify-content: center;
-    }
-
-    .iconos-footer{
-        height:25px;
-        width: 25px;
-    }
-
-    .p-footer{
-        font-size: .75rem;
-    }
-
-    .div-grid-contacto{
-        display: block;
-        height: 50rem;
-    }
-
-    .div-parrafo-contacto{
-        background-color: grey;
-        width: 90%;
-        height: 13.75rem;
-        padding: 1.25rem;
-        margin: auto;
-        border-radius: 0;
-    }
-
-    .div-ul-contacto{
-        background-color: grey;
-        width: 70%;
-        height: 6.25rem;
-        margin: auto;
-        margin-top: 1.25rem;
-        padding: .3125rem;
-        border-radius: 0;
-        margin-top: .625rem;
-    }
-
-    .ul-contacto{
-        gap:1.875rem;
-    }
-
-    .form-contacto{
-        width: 70%;
-        height: 28.125rem;
-        background-color: rgb(128, 128, 128);
-        padding: 1.875rem;
-        margin: auto;
-        margin-top: 1.25rem;
-        border-radius: 0;
-    }
-
-    .button-reserva{
-        padding: .0625rem;
-    }
-
-    .button-reserva a{
-        font-size: .75rem;
-    }
-}
-
-@media (max-width:320px){
-
-    header {
-        flex-direction: column;
-    } 
-
-    .img-header{
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .list-nav{
-        gap: .6875rem;
-    }
-
-    .list-nav li a {
-        font-size: .75rem;
-    }
-
-    h1{
-        font-size: 1rem;
-    }
-
-    h2{
-        font-size: 1rem;
-    }
-
-    .subtitle-principal{
-        margin-bottom: 6.25rem;
-        margin-top: 6.25rem;
-        line-height: 2rem;
-    }
-
-    .parrafos-pag{
-        font-size: 1rem;
-    }
-
-    .img-1{
-        height:16.25rem;
-        width: 100%;
-        padding: 0;
-    }
-
-    .img-1 img{
-        height: 15rem;
-        width:100%;
-        border: none;
-    }
-
-    .link-whatsapp{
-        font-size: .75rem;
-    }
-
-    iframe{
-        width: 100%;
-        height: 12.5rem;
-        padding-bottom: none;
-    }
-
-    .parrafo-campeonato{
-        border-radius: .3125rem;
-    }
-
-    .list-footer {
-        gap: .625rem;
-    }
-
-    .iconos-footer{
-        height:25px;
-        width: 25px;
-    }
-
-    .p-footer{
-        font-size: .75rem;
-    }
-
-    .div-grid-contacto{
-        display: block;
-        height: 50rem;
-    }
-
-    .div-parrafo-contacto{
-        background-color: grey;
-        width: 90%;
-        height: 12.5rem;
-        padding: .625rem;
-        margin: auto;
-        border-radius: 0;
-    }
-
-.div-ul-contacto{
+    border-radius: .625rem; }
+
+footer {
+  background-color: grey;
+  padding: .3125rem; }
+  footer .list-footer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5rem;
+    padding: 2%;
+    justify-content: center; }
+    footer .list-footer li a img {
+      width: 2.8125rem;
+      height: 2.8125rem; }
+  footer .p-footer {
+    font-size: .9375rem;
+    text-align: center; }
+
+.div-grid-contacto {
+  display: grid;
+  width: 100%;
+  height: 37.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "div1 div1 div3 div3" "div1 div1 div3 div3" "div2 div2 div3 div3" "div2 div2 div3 div3"; }
+
+.div-parrafo-contacto {
+  grid-area: div1; }
+
+.div-ul-contacto {
+  grid-area: div2; }
+
+.form-contacto {
+  grid-area: div3; }
+
+/*components*/
+.div-button {
+  text-align: center; }
+  .div-button .button-reserva {
+    padding: .625rem;
     background-color: grey;
-    width: 70%;
-    height: 6.25rem;
+    border-radius: .625rem;
+    margin: 1.25rem; }
+    .div-button .button-reserva:hover {
+      transform: scale(1.2); }
+    .div-button .button-reserva a {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem; }
+      .div-button .button-reserva a:hover {
+        text-decoration: underline; }
+
+.list-nav li:hover {
+  transform: scale(1.2); }
+
+.titulo {
+  -webkit-animation: tracking-in-contract-bck 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-17 16:45:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+/*medias*/
+@media (max-width: 1024px) and (max-width: 1024px) {
+  header .img-header {
+    width: 8.125rem;
+    height: 5.625rem; }
+  header nav .list-nav {
+    gap: .9375rem; }
+    header nav .list-nav li a {
+      font-size: 1.5rem; }
+  main h1 {
+    font-size: 1.875rem; }
+  main h2 {
+    font-size: 1.5625rem; }
+  .div-grid-contacto {
+    height: 37.5rem; }
+    .div-grid-contacto .div-parrafo-contacto {
+      width: 25rem;
+      padding: 1.875rem;
+      margin-top: 3.125rem; }
+    .div-grid-contacto .div-ul-contacto {
+      width: 25rem;
+      margin-bottom: 3.4375rem; }
+    .div-grid-contacto .ul-contacto {
+      gap: 3.75rem; }
+    .div-grid-contacto .form-contacto {
+      width: 18.75rem;
+      height: 31.25rem;
+      padding: .9375rem;
+      margin: auto;
+      border-radius: 1.5625rem; }
+      .div-grid-contacto .form-contacto .contact {
+        margin-bottom: 3.125rem; } }
+
+@media (max-width: 890px) and (max-width: 890px) {
+  header .img-header {
+    width: 8.125rem;
+    height: 5.625rem; }
+  header nav .list-nav {
+    gap: .9375rem; }
+    header nav .list-nav li a {
+      font-size: 1.375rem; }
+  main h1 {
+    font-size: 1.6875rem; }
+  main h2 {
+    font-size: 1.4375rem; }
+  main .img-1 {
+    height: 31.25rem; }
+  .div-grid-contacto .div-parrafo-contacto {
+    width: 21.875rem;
+    padding: 1.875rem;
+    margin-bottom: 4px; }
+  .div-grid-contacto .div-ul-contacto {
+    width: 21.875rem;
+    margin-bottom: 3.125rem; }
+    .div-grid-contacto .div-ul-contacto .ul-contacto {
+      gap: 3.75rem; }
+  .div-grid-contacto .form-contacto {
+    width: 16.875rem;
+    height: 31.25rem;
+    padding: .9375rem;
     margin: auto;
-    margin-top: 1.25rem;
-    padding: .3125rem;
-    border-radius: 0;
-    margin-top: .625rem;
-    }
+    border-radius: 1.5625rem; } }
 
-    .ul-contacto{
-        gap:1.875rem;
-    }
+@media (max-width: 768px) and (max-width: 768px) {
+  header .img-header {
+    width: 6.25rem;
+    height: 4.6875rem; }
+  header nav .list-nav {
+    gap: .9375rem; }
+    header nav .list-nav li a {
+      font-size: 1.125rem; }
+  main h1 {
+    font-size: 1.5625rem; }
+  main h2 {
+    font-size: 1.25rem; }
+  main .img-1 {
+    height: 25rem; }
+  main .parrafos-pag {
+    font-size: 1.125rem; }
+  main iframe {
+    width: 70%; }
+  main .div-button {
+    text-align: center; }
+    main .div-button .button-reserva {
+      padding: .3125rem;
+      border-radius: .625rem;
+      margin: 1.25rem; }
+      main .div-button .button-reserva a {
+        font-size: .75rem; }
+  footer .list-footer li a .iconos-footer {
+    width: 2.1875rem;
+    height: 2.1875rem; }
+  .div-grid-contacto {
+    height: 31.25rem; }
+    .div-grid-contacto .form-contacto {
+      width: 15.625rem;
+      height: 25.625rem;
+      padding: 1.25rem;
+      border-radius: 1.5625rem;
+      margin: auto; }
+      .div-grid-contacto .form-contacto .contact {
+        margin-bottom: 1.5625rem; }
+    .div-grid-contacto .div-ul-contacto {
+      width: 15.625rem;
+      height: 7.5rem;
+      padding: 1.25rem;
+      border-radius: 1.5625rem; }
+      .div-grid-contacto .div-ul-contacto .ul-contacto {
+        gap: 3.125rem; }
+        .div-grid-contacto .div-ul-contacto .ul-contacto li a img {
+          width: 2.1875rem;
+          height: 2.1875rem; }
+    .div-grid-contacto .div-parrafo-contacto {
+      width: 15.625rem;
+      height: 15rem;
+      padding: 1.875rem;
+      border-radius: 1.5625rem;
+      margin-top: 2.625rem; }
+      .div-grid-contacto .div-parrafo-contacto p {
+        font-size: 1.125rem; } }
 
-    .form-contacto{
-        width: 70%;
-        height: 28.125rem;
-        background-color: rgb(128, 128, 128);
-        padding: 1.875rem;
-        margin: auto;
-        margin-top: 1.25rem;
-        border-radius: 0;
-    }
+@media (max-width: 590px) and (max-width: 590px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 0; }
+    header nav .list-nav {
+      gap: .5rem; }
+      header nav .list-nav a {
+        font-size: .9375rem; }
+  main h1 {
+    font-size: 18px; }
+  main h2 {
+    font-size: 1.25rem; }
+  main .subtitle-principal {
+    line-height: 2rem; }
+  main .img-1 {
+    height: 25rem;
+    width: 100%;
+    padding: 0; }
+    main .img-1 img {
+      height: 25rem;
+      width: 100%;
+      border: none; }
+  main .parrafos-pag {
+    margin: .3125rem;
+    font-size: 1.25rem; }
+  main .div-iframe {
+    width: 100%;
+    text-align: center; }
+    main .div-iframe iframe {
+      width: 100%; }
+  footer .list-footer {
+    gap: 1.25rem; }
+    footer .list-footer li a .iconos-footer {
+      width: 2.1875rem;
+      height: 2.1875rem; }
+  .div-grid-contacto {
+    display: block;
+    height: 50rem; }
+    .div-grid-contacto .div-parrafo-contacto {
+      width: 100%;
+      height: 9.375rem;
+      margin: auto;
+      border-radius: 0; }
+      .div-grid-contacto .div-parrafo-contacto p {
+        font-size: 1.25rem; }
+    .div-grid-contacto .div-ul-contacto {
+      width: 70%;
+      height: 6.25rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      padding: .3125rem;
+      border-radius: .625rem;
+      margin-top: .625rem; }
+    .div-grid-contacto .form-contacto {
+      width: 70%;
+      height: 28.125rem;
+      padding: 1.875rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      border-radius: .625rem; } }
 
-    .button-reserva{
-        padding: .0625rem;
-    }
+@media (max-width: 425px) and (max-width: 425px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 0; }
+    header .img-header {
+      width: 5rem;
+      height: 5rem; }
+    header nav .list-nav {
+      gap: .6875rem; }
+      header nav .list-nav li a {
+        font-size: .75rem; }
+  main h1 {
+    font-size: 1rem; }
+  main h2 {
+    font-size: .875rem; }
+  main .parrafos-pag {
+    font-size: .875rem; }
+  main .img-1 {
+    height: 16.25rem;
+    width: 100%;
+    padding: 0; }
+    main .img-1 img {
+      height: 15rem;
+      width: 100%;
+      border: none; }
+  main iframe {
+    width: 100%;
+    height: 12.5rem;
+    padding-bottom: none; }
+  footer .list-footer {
+    display: flex;
+    list-style: none;
+    gap: .625rem;
+    padding: 2%;
+    justify-content: center; }
+    footer .list-footer li a .iconos-footer {
+      height: 25px;
+      width: 25px; }
+  footer .p-footer {
+    font-size: .75rem; }
+  .div-grid-contacto {
+    display: block;
+    height: 50rem; }
+    .div-grid-contacto .div-parrafo-contacto {
+      width: 100%;
+      height: 11.875rem;
+      padding: 1.25rem;
+      margin: auto;
+      border-radius: 0; }
+    .div-grid-contacto .div-ul-contacto {
+      width: 70%;
+      height: 6.25rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      padding: .3125rem;
+      border-radius: 0;
+      margin-top: .625rem; }
+    .div-grid-contacto .ul-contacto {
+      gap: 1.875rem; }
+    .div-grid-contacto .form-contacto {
+      width: 70%;
+      height: 28.125rem;
+      padding: 1.875rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      border-radius: 0; }
+  .button-reserva {
+    padding: .0625rem; }
+    .button-reserva .button-reserva a {
+      font-size: .75rem; } }
 
-    .button-reserva a{
-        font-size: .75rem;
-    }
-}
+@media (max-width: 320px) and (max-width: 320px) {
+  header {
+    flex-direction: column; }
+    header .img-header {
+      width: 5rem;
+      height: 5rem; }
+    header nav .list-nav {
+      gap: .6875rem; }
+      header nav .list-nav li a {
+        font-size: .75rem; }
+  main h1 {
+    font-size: 1rem; }
+  main h2 {
+    font-size: 1rem; }
+  main .subtitle-principal {
+    margin-bottom: 6.25rem;
+    margin-top: 6.25rem;
+    line-height: 2rem; }
+  main .parrafos-pag {
+    font-size: 1rem; }
+  main .img-1 {
+    height: 16.25rem;
+    width: 100%;
+    padding: 0; }
+    main .img-1 img {
+      height: 15rem;
+      width: 100%;
+      border: none; }
+  main iframe {
+    width: 100%;
+    height: 12.5rem;
+    padding-bottom: none; }
+  footer .list-footer {
+    gap: .625rem; }
+    footer .list-footer .iconos-footer {
+      height: 25px;
+      width: 25px; }
+  footer .p-footer {
+    font-size: .75rem; }
+  .div-grid-contacto {
+    display: block;
+    height: 50rem; }
+    .div-grid-contacto .div-parrafo-contacto {
+      background-color: grey;
+      width: 90%;
+      height: 12.5rem;
+      padding: .625rem;
+      margin: auto;
+      border-radius: 0; }
+    .div-grid-contacto .div-ul-contacto {
+      background-color: grey;
+      width: 70%;
+      height: 6.25rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      padding: .3125rem;
+      border-radius: 0;
+      margin-top: .625rem; }
+    .div-grid-contacto .ul-contacto {
+      gap: 1.875rem; }
+    .div-grid-contacto .form-contacto {
+      width: 70%;
+      height: 28.125rem;
+      background-color: grey;
+      padding: 1.875rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      border-radius: 0; }
+  .button-reserva {
+    padding: .0625rem; }
+    .button-reserva a {
+      font-size: .75rem; } }
+
+/*modificar boton y agregar mixin falta*/

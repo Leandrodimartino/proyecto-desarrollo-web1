@@ -1,0 +1,98 @@
+@media (max-width:590px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding: 0;
+        nav{
+            .list-nav{
+                gap: .5rem;
+                a{
+                    font-size: .9375rem;
+                }
+            }
+        }
+    }
+
+    main{
+        h1{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 1.25rem;
+        }
+        .subtitle-principal{
+        line-height: 2rem;
+        }
+        .img-1{
+            height:25rem;
+            width: 100%;
+            padding: 0;
+            img{
+                height: 25rem;
+                width:100%;
+                border: none;
+            }
+        }
+        .parrafos-pag{
+            margin: .3125rem;
+            font-size: 1.25rem;
+        }
+        .div-iframe{
+            width: 100%;
+            text-align: center;
+            iframe{
+                width:100%;
+            }
+        }
+    }
+
+
+    footer{
+        .list-footer{
+            gap: 1.25rem;
+            li{
+                a{
+                    .iconos-footer{
+                        width: 2.1875rem;
+                        height: 2.1875rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .div-grid-contacto{
+        display: block;
+        height: 50rem;
+        .div-parrafo-contacto{
+            width: 100%;
+            height: 9.375rem;
+            margin: auto;
+            border-radius: 0;
+            p{
+                font-size: 1.25rem;
+            }
+        }
+        .div-ul-contacto{
+            width: 70%;
+            height: 6.25rem;
+            margin: auto;
+            margin-top: 1.25rem;
+            padding: .3125rem;
+            border-radius: .625rem;
+            margin-top: .625rem;
+        }
+        .form-contacto{
+            width: 70%;
+            height: 28.125rem;
+            padding: 1.875rem;
+            margin: auto;
+            margin-top: 1.25rem;
+            border-radius: .625rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+nav {
+    background-color:map-get($colores, colorFondo);
+    padding: 0;
+    .list-nav{
+        @include flex;
+        gap: 1.875rem;
+        padding: 0;
+        margin: 0;
+        li{
+            a{
+                text-decoration: none;
+                color: map-get($colores, colortexto);
+                font-size: 1.75rem;
+                list-style: none;
+                &:hover{
+                    text-decoration: underline;
+                    color: map-get($colores, colorFondoSecundario);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@media (max-width: 768px){
+
+    header{
+        .img-header{ 
+            width: 6.25rem;
+            height: 4.6875rem;
+        }
+        nav{
+            .list-nav{
+                gap: .9375rem;
+                li{
+                    a{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        h1{
+            font-size:1.5625rem;
+        }
+        h2{
+            font-size: 1.25rem;
+        }
+        .img-1{
+            height: 25rem;
+        }
+        .parrafos-pag{
+            font-size: 1.125rem;
+        }
+        iframe{
+            width:70%
+        }
+        .div-button{
+            text-align: center;
+            .button-reserva{
+                padding: .3125rem;
+                border-radius:.625rem;
+                margin: 1.25rem;
+                a{
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        .list-footer{
+            li{
+                a{
+                    .iconos-footer{
+                        width: 2.1875rem;
+                        height: 2.1875rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .div-grid-contacto{
+        height: 31.25rem;
+        .form-contacto{
+            width: 15.625rem;
+            height: 25.625rem;
+            padding: 1.25rem;
+            border-radius: 1.5625rem;
+            margin: auto;
+            .contact{
+                margin-bottom: 1.5625rem;
+            }
+        }
+        .div-ul-contacto{
+            width: 15.625rem;
+            height: 7.5rem;
+            padding: 1.25rem;
+            border-radius: 1.5625rem;
+            .ul-contacto{
+                gap:3.125rem;
+                li{
+                    a{
+                        img{
+                            width: 2.1875rem;
+                            height: 2.1875rem;
+                        }
+                    }
+                }
+            }
+        }  
+        .div-parrafo-contacto{
+            width: 15.625rem;
+            height:15rem;
+            padding: 1.875rem;
+            border-radius: 1.5625rem;
+            margin-top: 2.625rem;
+            p{
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

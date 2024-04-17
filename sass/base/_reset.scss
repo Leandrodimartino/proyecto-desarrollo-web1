@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color:map-get($colores, colorFondo);
+    background-image: linear-gradient(to bottom, #000000, #040404, #080809, #0c0d0d, #0f1010, #0f1010, #0f1010, #0f1010, #0c0d0d, #080809, #040404, #000000);
+}

@@ -1,0 +1,52 @@
+@media (max-width: 890px){
+    header{
+        .img-header{ 
+            width: 8.125rem;
+            height: 5.625rem;
+        }
+        nav{
+            .list-nav{
+                gap:.9375rem;
+                li{
+                    a{
+                        font-size: 1.375rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    main{
+        h1{
+            font-size:1.6875rem;
+        }
+        h2{
+            font-size:1.4375rem;
+        }
+        .img-1{
+            height: 31.25rem;
+        }
+    }
+    
+    .div-grid-contacto{
+        .div-parrafo-contacto{
+            width: 21.875rem;
+            padding: 1.875rem;
+            margin-bottom: 4px;
+        }
+        .div-ul-contacto{
+            width: 21.875rem;
+            margin-bottom: 3.125rem;
+            .ul-contacto{
+                gap: 3.75rem;
+            }
+        }
+        .form-contacto{
+            width:16.875rem;
+            height: 31.25rem;
+            padding: .9375rem;
+            margin: auto;
+            border-radius: 1.5625rem;
+        }
+    }
+}

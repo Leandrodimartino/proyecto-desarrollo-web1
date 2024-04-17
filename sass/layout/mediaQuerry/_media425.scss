@@ -1,0 +1,111 @@
+@media (max-width:425px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding: 0;
+        .img-header{
+            width: 5rem;
+            height: 5rem;
+        }
+        nav{
+            .list-nav{
+                gap: .6875rem;
+                li{
+                    a{ 
+                        font-size:.75rem;
+                    }
+                }
+            }
+        } 
+    }
+
+    main{
+        h1{
+            font-size: 1rem;
+        }
+        h2{
+            font-size: .875rem;
+        }
+        .parrafos-pag{
+            font-size: .875rem;
+        }
+        .img-1{
+            height:16.25rem;
+            width: 100%;
+            padding: 0;
+            img{
+                height: 15rem;
+                width:100%;
+                border: none;
+            }
+        }
+        iframe{
+            width: 100%;
+            height: 12.5rem;
+            padding-bottom: none;
+        }
+    }
+
+    footer{
+        .list-footer {
+            display: flex;
+            list-style: none;
+            gap: .625rem;
+            padding: 2%;
+            justify-content: center;
+            li{
+                a{
+                    .iconos-footer{
+                    height:25px;
+                    width: 25px;
+                    }
+                }
+            }
+        }
+        .p-footer{
+            font-size: .75rem;
+        }
+    }
+
+    .div-grid-contacto{
+        display: block;
+        height: 50rem;
+        .div-parrafo-contacto{
+            width: 100%;
+            height: 11.875rem;
+            padding: 1.25rem;
+            margin: auto;
+            border-radius: 0;
+        }
+        .div-ul-contacto{
+            width: 70%;
+            height: 6.25rem;
+            margin: auto;
+            margin-top: 1.25rem;
+            padding: .3125rem;
+            border-radius: 0;
+            margin-top: .625rem;
+        }
+        .ul-contacto{
+            gap:1.875rem;
+        }
+        .form-contacto{
+            width: 70%;
+            height: 28.125rem;
+            padding: 1.875rem;
+            margin: auto;
+            margin-top: 1.25rem;
+            border-radius: 0;
+        }
+    }
+
+    .button-reserva{
+        padding: .0625rem;
+        .button-reserva a{
+            font-size: .75rem;
+        }
+    }
+}

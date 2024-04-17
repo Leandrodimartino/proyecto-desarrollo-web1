@@ -1,0 +1,20 @@
+.div-button{
+    text-align: center;
+    .button-reserva{
+        padding: .625rem;
+        background-color:map-get($colores, colorFondoSecundario);
+        border-radius:.625rem;
+        margin: 1.25rem;
+        &:hover{
+            transform: scale(1.2);
+        }
+        a{
+            color:map-get($colores, colorFondo);
+            text-decoration:none;
+            font-size: 1rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

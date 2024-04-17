@@ -1,0 +1,74 @@
+.div-grid-contacto{
+    .div-parrafo-contacto{
+        background-color:map-get($colores, colorFondoSecundario);
+        width: 31.25rem;
+        height: 15.625rem;
+        padding: 2.5rem;
+        margin: auto;
+        margin-top: 3.125rem;
+        border-radius: 1.5625rem;
+        p{
+            font-size: 1.5rem;
+            text-align:center;
+        }
+    }
+    .div-ul-contacto{
+        background-color: map-get($colores, colorFondoSecundario);
+        width: 31.25rem;
+        height: 9.375rem;
+        margin: auto;
+        margin-bottom: 3.4375rem;
+        padding: 1.875rem;
+        border-radius: 1.5625rem;
+        h4{
+            font-size: 1.625rem;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: .9375rem;
+        }
+    }
+    .ul-contacto{
+        background-color: map-get($colores, colorFondoSecundario);
+        display: flex;
+        list-style: none;
+        gap: 5.625rem;
+        justify-content: center;
+        li{
+            a{
+                .iconos-footer{
+                    width: 2.8125rem;
+                    height: 2.8125rem;
+                }
+            }
+        }
+    }
+    .form-contacto{
+        width: 23.75rem;
+        height: 31.25rem;
+        background-color: map-get($colores, colorFondoSecundario);
+        padding: 1.875rem;
+        margin: auto;
+        border-radius: 1.5625rem;
+        h4{
+            text-align: center;
+            text-decoration: underline;
+            height: 4.375rem;
+            font-size: 1.5rem;
+        }
+        .contact{
+            width: 100%;
+            padding: .625rem;
+            border-radius: .625rem;
+            margin-bottom: 2.8125rem;
+            border: 1px solid map-get($colores, colorFondo);
+        }
+    .boton{
+        width: 100%;
+        border: 1px solid map-get($colores, colorFondo);
+        color: map-get($colores, colorFondo);
+        padding: .625rem;
+        background-color: map-get($colores, colorFondoSecundario);
+        border-radius: .625rem;
+        }
+    }
+}
