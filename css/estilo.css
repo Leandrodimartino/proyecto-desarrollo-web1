@@ -11,35 +11,55 @@ body {
 
 /*layout*/
 header {
+  height: 7.5rem;
   display: flex;
   flex-direction: row;
   border: 2px solid grey;
   background-color: black;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0; }
-  header .img-header {
-    height: 6.875rem;
-    width: 9.375rem; }
-  header nav {
-    background-color: black;
-    padding: 0; }
-    header nav .list-nav {
+  top: 0;
+  z-index: 1; }
+  header .back {
+    padding: 32px 0;
+    background-color: black; }
+    header .back .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
       display: flex;
-      flex-direction: row;
-      list-style: none;
-      gap: 1.875rem;
-      padding: 0;
-      margin: 0; }
-      header nav .list-nav li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.75rem;
-        list-style: none; }
-        header nav .list-nav li a:hover {
-          text-decoration: underline;
-          color: grey; }
+      align-items: center;
+      justify-content: center;
+      z-index: 1000; }
+      header .back .menu .img-header {
+        height: 6.875rem;
+        width: 9.375rem; }
+      header .back .menu .menu-icono {
+        width: 1.5625rem; }
+      header .back .menu .conteiner {
+        margin: 0 auto; }
+      header .back .menu #menu {
+        display: none; }
+      header .back .menu label {
+        cursor: pointer;
+        display: none; }
+
+.navbar .list-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem; }
+  .navbar .list-nav li {
+    position: relative;
+    float: left;
+    list-style: none; }
+    .navbar .list-nav li a {
+      text-decoration: none;
+      font-size: 1.625rem;
+      color: white;
+      display: block;
+      text-align: center; }
 
 main {
   margin-bottom: 1.875rem; }
@@ -67,6 +87,16 @@ main {
     text-align: center;
     font-size: 1.5625rem;
     color: white; }
+  main .parrafos {
+    text-align: center;
+    background-color: grey;
+    width: 80%;
+    margin: auto;
+    padding: 1.25rem;
+    border-radius: .3125rem; }
+    main .parrafos p {
+      color: black;
+      font-size: 1.25rem; }
   main .div-iframe {
     text-align: center;
     width: 100%;
@@ -74,6 +104,39 @@ main {
     main .div-iframe iframe {
       width: 70%;
       margin-top: 1.25rem; }
+  main .grid-reserva .img-grid-reserva1 {
+    width: 21.875rem;
+    height: 18.75rem; }
+    main .grid-reserva .img-grid-reserva1 img {
+      width: 21.875rem;
+      height: 18.75rem; }
+  main .grid-reserva .img-grid-reserva2 {
+    width: 21.875rem;
+    height: 18.75rem; }
+    main .grid-reserva .img-grid-reserva2 img {
+      width: 21.875rem;
+      height: 18.75rem; }
+  main .grid-reserva .img-grid-reserva3 {
+    width: 21.875rem;
+    height: 18.75rem; }
+    main .grid-reserva .img-grid-reserva3 img {
+      width: 21.875rem;
+      height: 18.75rem; }
+  main .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 25rem; }
+    main .cards .div-card {
+      width: 28.125rem;
+      height: 23.125rem;
+      background-color: grey; }
+      main .cards .div-card img {
+        width: 28.125rem;
+        height: 18.75rem; }
+      main .cards .div-card h4 {
+        text-align: center;
+        font-size: 2.5rem; }
 
 .div-grid-contacto .div-parrafo-contacto {
   background-color: grey;
@@ -171,6 +234,25 @@ footer {
 .form-contacto {
   grid-area: div3; }
 
+.grid-reserva {
+  display: grid;
+  width: 100%;
+  height: 25rem;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "div1 div2 div3" "div1 div2 div3" "div1 div2 div3" "div1 div2 div3"; }
+
+.img-grid-reserva1 {
+  grid-area: div1; }
+
+.img-grid-reserva2 {
+  grid-area: div2; }
+
+.img-grid-reserva3 {
+  grid-area: div3; }
+
 /*components*/
 .div-button {
   text-align: center; }
@@ -233,45 +315,96 @@ footer {
     opacity: 1; } }
 
 /*medias*/
+@media (max-width: 1225px) and (max-width: 1225px) {
+  main section .grid-reserva .img-grid-reserva1 {
+    width: 18.75rem;
+    height: 18.75rem; }
+    main section .grid-reserva .img-grid-reserva1 img {
+      width: 18.75rem;
+      height: 18.75rem; }
+  main section .grid-reserva .img-grid-reserva2 {
+    width: 18.75rem;
+    height: 18.75rem; }
+    main section .grid-reserva .img-grid-reserva2 img {
+      width: 18.75rem;
+      height: 18.75rem; }
+  main section .grid-reserva .img-grid-reserva3 {
+    width: 18.75rem;
+    height: 18.75rem; }
+    main section .grid-reserva .img-grid-reserva3 img {
+      width: 18.75rem;
+      height: 18.75rem; } }
+
 @media (max-width: 1024px) and (max-width: 1024px) {
-  header .img-header {
-    width: 8.125rem;
-    height: 5.625rem; }
-  header nav .list-nav {
-    gap: .9375rem; }
-    header nav .list-nav li a {
-      font-size: 1.5rem; }
+  header {
+    height: 6.25rem; }
+    header .back .menu .img-header {
+      width: 8.125rem;
+      height: 5.625rem; }
+    header .back .menu nav .list-nav {
+      gap: .9375rem; }
+      header .back .menu nav .list-nav li a {
+        font-size: 1.5rem; }
   main h1 {
     font-size: 1.875rem; }
   main h2 {
     font-size: 1.5625rem; }
-  .div-grid-contacto {
+  main .cards {
+    height: 21.875rem; }
+    main .cards .div-card {
+      width: 21.875rem;
+      height: 18.75rem; }
+      main .cards .div-card img {
+        width: 21.875rem;
+        height: 15.625rem; }
+      main .cards .div-card h4 {
+        text-align: center;
+        font-size: 2.5rem; }
+  main .div-grid-contacto {
     height: 37.5rem; }
-    .div-grid-contacto .div-parrafo-contacto {
+    main .div-grid-contacto .div-parrafo-contacto {
       width: 25rem;
       padding: 1.875rem;
       margin-top: 3.125rem; }
-    .div-grid-contacto .div-ul-contacto {
+    main .div-grid-contacto .div-ul-contacto {
       width: 25rem;
       margin-bottom: 3.4375rem; }
-    .div-grid-contacto .ul-contacto {
+    main .div-grid-contacto .ul-contacto {
       gap: 3.75rem; }
-    .div-grid-contacto .form-contacto {
+    main .div-grid-contacto .form-contacto {
       width: 18.75rem;
       height: 31.25rem;
       padding: .9375rem;
       margin: auto;
       border-radius: 1.5625rem; }
-      .div-grid-contacto .form-contacto .contact {
-        margin-bottom: 3.125rem; } }
+      main .div-grid-contacto .form-contacto .contact {
+        margin-bottom: 3.125rem; }
+  main section .grid-reserva .img-grid-reserva1 {
+    width: 16.25rem;
+    height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva1 img {
+      width: 16.25rem;
+      height: 16.25rem; }
+  main section .grid-reserva .img-grid-reserva2 {
+    width: 16.25rem;
+    height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva2 img {
+      width: 16.25rem;
+      height: 16.25rem; }
+  main section .grid-reserva .img-grid-reserva3 {
+    width: 16.25rem;
+    height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva3 img {
+      width: 16.25rem;
+      height: 16.25rem; } }
 
 @media (max-width: 890px) and (max-width: 890px) {
-  header .img-header {
+  header .back .menu .img-header {
     width: 8.125rem;
     height: 5.625rem; }
-  header nav .list-nav {
+  header .back .menu nav .list-nav {
     gap: .9375rem; }
-    header nav .list-nav li a {
+    header .back .menu nav .list-nav li a {
       font-size: 1.375rem; }
   main h1 {
     font-size: 1.6875rem; }
@@ -279,30 +412,56 @@ footer {
     font-size: 1.4375rem; }
   main .img-1 {
     height: 31.25rem; }
-  .div-grid-contacto .div-parrafo-contacto {
+  main .parrafos p {
+    font-size: 1.25rem; }
+  main .div-grid-contacto .div-parrafo-contacto {
     width: 21.875rem;
     padding: 1.875rem;
     margin-bottom: 4px; }
-  .div-grid-contacto .div-ul-contacto {
+  main .div-grid-contacto .div-ul-contacto {
     width: 21.875rem;
     margin-bottom: 3.125rem; }
-    .div-grid-contacto .div-ul-contacto .ul-contacto {
+    main .div-grid-contacto .div-ul-contacto .ul-contacto {
       gap: 3.75rem; }
-  .div-grid-contacto .form-contacto {
+  main .div-grid-contacto .form-contacto {
     width: 16.875rem;
     height: 31.25rem;
     padding: .9375rem;
     margin: auto;
-    border-radius: 1.5625rem; } }
+    border-radius: 1.5625rem; }
+  main section .grid-reserva {
+    height: 15.625rem;
+    margin-bottom: 3.125rem; }
+    main section .grid-reserva .img-grid-reserva1 {
+      width: 14.375rem;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva1 img {
+        width: 14.375rem;
+        height: 14.375rem; }
+    main section .grid-reserva .img-grid-reserva2 {
+      width: 14.375rem;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva2 img {
+        width: 14.375rem;
+        height: 14.375rem; }
+    main section .grid-reserva .img-grid-reserva3 {
+      width: 14.375rem;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva3 img {
+        width: 14.375rem;
+        height: 14.375rem; } }
 
 @media (max-width: 768px) and (max-width: 768px) {
-  header .img-header {
-    width: 6.25rem;
-    height: 4.6875rem; }
-  header nav .list-nav {
-    gap: .9375rem; }
-    header nav .list-nav li a {
-      font-size: 1.125rem; }
+  header {
+    height: 5rem; }
+    header .back .menu .img-header {
+      width: 6.25rem;
+      height: 4.6875rem; }
+    header .back .menu nav .list-nav {
+      gap: 1.25rem; }
+      header .back .menu nav .list-nav li a {
+        font-size: 1.25rem;
+        padding: 0; }
   main h1 {
     font-size: 1.5625rem; }
   main h2 {
@@ -311,6 +470,8 @@ footer {
     height: 25rem; }
   main .parrafos-pag {
     font-size: 1.125rem; }
+  main .parrafos p {
+    font-size: 1.25rem; }
   main iframe {
     width: 70%; }
   main .div-button {
@@ -321,52 +482,98 @@ footer {
       margin: 1.25rem; }
       main .div-button .button-reserva a {
         font-size: .75rem; }
-  footer .list-footer li a .iconos-footer {
-    width: 2.1875rem;
-    height: 2.1875rem; }
-  .div-grid-contacto {
+  main .cards {
+    height: 18.75rem; }
+    main .cards .div-card {
+      width: 15.625rem;
+      height: 15.625rem; }
+      main .cards .div-card img {
+        width: 15.625rem;
+        height: 12.5rem; }
+      main .cards .div-card h4 {
+        text-align: center;
+        font-size: 1.875rem; }
+  main .div-grid-contacto {
     height: 31.25rem; }
-    .div-grid-contacto .form-contacto {
+    main .div-grid-contacto .form-contacto {
       width: 15.625rem;
       height: 25.625rem;
       padding: 1.25rem;
       border-radius: 1.5625rem;
       margin: auto; }
-      .div-grid-contacto .form-contacto .contact {
+      main .div-grid-contacto .form-contacto .contact {
         margin-bottom: 1.5625rem; }
-    .div-grid-contacto .div-ul-contacto {
+    main .div-grid-contacto .div-ul-contacto {
       width: 15.625rem;
       height: 7.5rem;
       padding: 1.25rem;
       border-radius: 1.5625rem; }
-      .div-grid-contacto .div-ul-contacto .ul-contacto {
+      main .div-grid-contacto .div-ul-contacto .ul-contacto {
         gap: 3.125rem; }
-        .div-grid-contacto .div-ul-contacto .ul-contacto li a img {
+        main .div-grid-contacto .div-ul-contacto .ul-contacto li a img {
           width: 2.1875rem;
           height: 2.1875rem; }
-    .div-grid-contacto .div-parrafo-contacto {
+    main .div-grid-contacto .div-parrafo-contacto {
       width: 15.625rem;
       height: 15rem;
       padding: 1.875rem;
       border-radius: 1.5625rem;
       margin-top: 2.625rem; }
-      .div-grid-contacto .div-parrafo-contacto p {
-        font-size: 1.125rem; } }
+      main .div-grid-contacto .div-parrafo-contacto p {
+        font-size: 1.125rem; }
+  main section .grid-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    height: 50rem;
+    margin-bottom: 1.25rem; }
+    main section .grid-reserva .img-grid-reserva1 {
+      width: 28.125rem;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva1 img {
+        width: 28.125rem;
+        height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva2 {
+      width: 28.125rem;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva2 img {
+        width: 28.125rem;
+        height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva3 {
+      width: 28.125rem;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva3 img {
+        width: 28.125rem;
+        height: 16.25rem; }
+  footer .list-footer li a .iconos-footer {
+    width: 2.1875rem;
+    height: 2.1875rem; } }
 
 @media (max-width: 590px) and (max-width: 590px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    padding: 0; }
-    header nav .list-nav {
-      gap: .5rem; }
-      header nav .list-nav a {
-        font-size: .9375rem; }
+  header .back {
+    padding: 40px 0; }
+    header .back .menu {
+      justify-content: space-between;
+      padding: 0 .625rem; }
+      header .back .menu label {
+        display: initial; }
+      header .back .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none; }
+        header .back .menu .navbar .list-nav {
+          display: flex;
+          flex-direction: column; }
+          header .back .menu .navbar .list-nav li a {
+            padding: 10px 0;
+            color: grey; }
+  header #menu:checked ~ .navbar {
+    display: initial; }
   main h1 {
-    font-size: 18px; }
+    font-size: 1.125rem; }
   main h2 {
     font-size: 1.25rem; }
   main .subtitle-principal {
@@ -382,27 +589,43 @@ footer {
   main .parrafos-pag {
     margin: .3125rem;
     font-size: 1.25rem; }
+  main .parrafos {
+    width: 100%; }
+    main .parrafos p {
+      font-size: 1.25rem; }
   main .div-iframe {
     width: 100%;
     text-align: center; }
     main .div-iframe iframe {
       width: 100%; }
-  footer .list-footer {
-    gap: 1.25rem; }
-    footer .list-footer li a .iconos-footer {
-      width: 2.1875rem;
-      height: 2.1875rem; }
-  .div-grid-contacto {
-    display: block;
+  main .cards {
+    height: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem; }
+    main .cards .div-card {
+      width: 100%;
+      height: 21.875rem; }
+      main .cards .div-card img {
+        width: 100%;
+        height: 18.75rem; }
+      main .cards .div-card h4 {
+        text-align: center;
+        font-size: 1.875rem; }
+  main .div-grid-contacto {
+    display: flex;
+    flex-direction: column;
     height: 50rem; }
-    .div-grid-contacto .div-parrafo-contacto {
+    main .div-grid-contacto .div-parrafo-contacto {
       width: 100%;
       height: 9.375rem;
       margin: auto;
       border-radius: 0; }
-      .div-grid-contacto .div-parrafo-contacto p {
+      main .div-grid-contacto .div-parrafo-contacto p {
         font-size: 1.25rem; }
-    .div-grid-contacto .div-ul-contacto {
+    main .div-grid-contacto .div-ul-contacto {
       width: 70%;
       height: 6.25rem;
       margin: auto;
@@ -410,29 +633,46 @@ footer {
       padding: .3125rem;
       border-radius: .625rem;
       margin-top: .625rem; }
-    .div-grid-contacto .form-contacto {
+    main .div-grid-contacto .form-contacto {
       width: 70%;
       height: 28.125rem;
       padding: 1.875rem;
       margin: auto;
       margin-top: 1.25rem;
-      border-radius: .625rem; } }
+      border-radius: .625rem; }
+  main section .grid-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    height: 50rem;
+    margin-bottom: 1.25rem; }
+    main section .grid-reserva .img-grid-reserva1 {
+      width: 100%;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva1 img {
+        width: 100%;
+        height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva2 {
+      width: 100%;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva2 img {
+        width: 100%;
+        height: 16.25rem; }
+    main section .grid-reserva .img-grid-reserva3 {
+      width: 100%;
+      height: 16.25rem; }
+      main section .grid-reserva .img-grid-reserva3 img {
+        width: 100%;
+        height: 16.25rem; }
+  footer .list-footer {
+    gap: 1.25rem; }
+    footer .list-footer li a .iconos-footer {
+      width: 2.1875rem;
+      height: 2.1875rem; } }
 
 @media (max-width: 425px) and (max-width: 425px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    padding: 0; }
-    header .img-header {
-      width: 5rem;
-      height: 5rem; }
-    header nav .list-nav {
-      gap: .6875rem; }
-      header nav .list-nav li a {
-        font-size: .75rem; }
+  header .back .menu .navbar .list-nav li a {
+    padding: 5px 0; }
   main h1 {
     font-size: 1rem; }
   main h2 {
@@ -440,17 +680,70 @@ footer {
   main .parrafos-pag {
     font-size: .875rem; }
   main .img-1 {
-    height: 16.25rem;
+    height: 18.75rem;
     width: 100%;
     padding: 0; }
     main .img-1 img {
-      height: 15rem;
+      height: 17.5rem;
       width: 100%;
       border: none; }
   main iframe {
     width: 100%;
     height: 12.5rem;
     padding-bottom: none; }
+  main .cards .div-card {
+    height: 18.75rem; }
+    main .cards .div-card img {
+      height: 16.875rem; }
+    main .cards .div-card h4 {
+      font-size: 1.25rem; }
+  main .div-grid-contacto {
+    display: block;
+    height: 50rem; }
+    main .div-grid-contacto .div-parrafo-contacto {
+      width: 100%;
+      height: 11.875rem;
+      padding: 1.25rem;
+      margin: auto;
+      border-radius: 0; }
+    main .div-grid-contacto .div-ul-contacto {
+      width: 70%;
+      height: 6.25rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      padding: .3125rem;
+      border-radius: 0;
+      margin-top: .625rem; }
+    main .div-grid-contacto .ul-contacto {
+      gap: 1.875rem; }
+    main .div-grid-contacto .form-contacto {
+      width: 70%;
+      height: 28.125rem;
+      padding: 1.875rem;
+      margin: auto;
+      margin-top: 1.25rem;
+      border-radius: 0; }
+  main section .grid-reserva {
+    height: 45rem;
+    margin-bottom: 1.25rem; }
+    main section .grid-reserva .img-grid-reserva1 {
+      width: 100%;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva1 img {
+        width: 100%;
+        height: 14.375rem; }
+    main section .grid-reserva .img-grid-reserva2 {
+      width: 100%;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva2 img {
+        width: 100%;
+        height: 14.375rem; }
+    main section .grid-reserva .img-grid-reserva3 {
+      width: 100%;
+      height: 14.375rem; }
+      main section .grid-reserva .img-grid-reserva3 img {
+        width: 100%;
+        height: 14.375rem; }
   footer .list-footer {
     display: flex;
     list-style: none;
@@ -462,47 +755,21 @@ footer {
       width: 25px; }
   footer .p-footer {
     font-size: .75rem; }
-  .div-grid-contacto {
-    display: block;
-    height: 50rem; }
-    .div-grid-contacto .div-parrafo-contacto {
-      width: 100%;
-      height: 11.875rem;
-      padding: 1.25rem;
-      margin: auto;
-      border-radius: 0; }
-    .div-grid-contacto .div-ul-contacto {
-      width: 70%;
-      height: 6.25rem;
-      margin: auto;
-      margin-top: 1.25rem;
-      padding: .3125rem;
-      border-radius: 0;
-      margin-top: .625rem; }
-    .div-grid-contacto .ul-contacto {
-      gap: 1.875rem; }
-    .div-grid-contacto .form-contacto {
-      width: 70%;
-      height: 28.125rem;
-      padding: 1.875rem;
-      margin: auto;
-      margin-top: 1.25rem;
-      border-radius: 0; }
   .button-reserva {
     padding: .0625rem; }
-    .button-reserva .button-reserva a {
+    .button-reserva a {
       font-size: .75rem; } }
 
 @media (max-width: 320px) and (max-width: 320px) {
   header {
-    flex-direction: column; }
-    header .img-header {
-      width: 5rem;
-      height: 5rem; }
-    header nav .list-nav {
-      gap: .6875rem; }
-      header nav .list-nav li a {
-        font-size: .75rem; }
+    height: 4.375rem; }
+    header .back .menu .img-header {
+      width: 4.375rem;
+      height: 4.0625rem; }
+    header .back .menu nav .list-nav {
+      gap: .9375rem; }
+      header .back .menu nav .list-nav li a {
+        font-size: 1.125rem; }
   main h1 {
     font-size: 1rem; }
   main h2 {
@@ -527,9 +794,9 @@ footer {
     padding-bottom: none; }
   footer .list-footer {
     gap: .625rem; }
-    footer .list-footer .iconos-footer {
-      height: 25px;
-      width: 25px; }
+    footer .list-footer li a .iconos-footer {
+      height: 1.25rem;
+      width: 1.25rem; }
   footer .p-footer {
     font-size: .75rem; }
   .div-grid-contacto {
@@ -565,5 +832,3 @@ footer {
     padding: .0625rem; }
     .button-reserva a {
       font-size: .75rem; } }
-
-/*modificar boton y agregar mixin falta*/

@@ -1,36 +1,63 @@
-header{
+header {
+    height: 7.5rem;
     display: flex;
     flex-direction: row;
     border: 2px solid map-get($colores, colorFondoSecundario);
     background-color: map-get($colores, colorFondo);
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    .img-header{
-        height: 6.875rem;
-        width: 9.375rem;
-    }
-    nav {
+    z-index: 1;
+    .back{
+        padding: 32px 0;
         background-color:map-get($colores, colorFondo);
-        padding: 0;
-        .list-nav{
-            @include flex;
-            gap: 1.875rem;
-            padding: 0;
-            margin: 0;
-            li{
-                a{
-                    text-decoration: none;
-                    color: map-get($colores, colortexto);
-                    font-size: 1.75rem;
-                    list-style: none;
-                    &:hover{
-                        text-decoration: underline;
-                        color: map-get($colores, colorFondoSecundario);
-                        }
-                }
+        .menu{
+            position:absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            .img-header{
+                height: 6.875rem;
+                width: 9.375rem;
+            }
+            .menu-icono{
+                width: 1.5625rem;
+            }
+            .conteiner{
+                margin: 0 auto;
+            }
+            #menu{
+                display: none;
+            }
+            label{
+                cursor: pointer;
+                display: none;
             }
         }
     }
+}
+
+.navbar{
+    .list-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        li{
+            position: relative;
+            float: left;
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: 1.625rem;
+                color: map-get($colores, colortexto);
+                display: block;
+                text-align: center;
+            }
+        }
+    } 
 }

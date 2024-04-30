@@ -21,18 +21,24 @@
 
 <body>
     <header>
-        <img class="img-header"  src="../assets/imagenes/logoencabezado.jpg" alt="logo de un futbol">
-
-        <nav>
-            <ul class="list-nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="./contacto.html">Contactos</a></li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
-            </ul>
-        </nav>
-
+        <div class="back">
+            <div class="menu container">
+                <img class="img-header"  src="../assets/imagenes/logoencabezado.jpg" alt="logo de un futbol">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="../assets/imagenes/menuburger.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul class="list-nav">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./reservas.html">Reservas</a></li>
+                        <li><a href="#">Campeonatos</a></li>
+                        <li><a href="./contacto.html">Contactos</a></li>
+                        <li><a href="./conocenos.html">Conocenos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -42,12 +48,26 @@
         <article>
             <h2>TORNEO DE LOS CAMPEONES!</h2>
 
-            <div class="img-1"><img src="../assets/imagenes/img-campeon.jpg" alt="hinchas con una vengala"></div>
+            <div class="img-1">
+                <img src="../assets/imagenes/img-campeon.jpg" alt="hinchas con una vengala">
+            </div>
 
             <h2>INSCRIBITE!</h2>
-
-            <div><p class="parrafos-pag">Para anotar a tu equipo al torneo de los campeones te pedimos que ingreses al siguiente link en el que te estaras comunicando con el organizador para enviarle 
-            los datos de los jugadores. Comienza pronto, no te demores mas!</p></div>
+            
+            <div class="cards">
+                <div class="div-card">
+                    <img src="../assets/imagenes/femenino.jpg" alt="equipo de futbol femenino">
+                    <h4>Futbol Femenino</h4>
+                </div>
+                <div class="div-card">
+                    <img src="../assets/imagenes/masculino.jpg" alt="equipo de futbol masculino">
+                    <h4>Futbol Masculino</h4>
+                </div>
+            </div>
+            <div class="parrafos">
+                <p>Para anotar a tu equipo al torneo de los campeones te pedimos que ingreses al siguiente link en el que te estaras comunicando con el organizador para enviarle 
+                los datos de los jugadores. Comienza pronto, no te demores mas!</p>
+            </div>
             <div class="div-button"><button class="button-reserva"><a href="https://wa.me/3516218594" target="_blank">Link De Whatsapp</a></button></div>
         </article>
         
@@ -56,13 +76,18 @@
     <footer>
 
         <ul class="list-footer">
-            <li><a href="https://maps.app.goo.gl/ZAsVju9LQAhJrLug7" target="_blank"><img class="iconos-footer" src="../assets/imagenes/mapa.png"></a></li>
-        
-            <li><a href="https://www.instagram.com/ligaprofesionalafa/?hl=es-la" target="_blank"><img class="iconos-footer" src="../assets/imagenes/instagram.png"></a></li>
-        
-            <li><a href="https://wa.me/3516218599" target="_blank"><img class="iconos-footer" src="../assets/imagenes/whatsapp.png"></a></li>
-        
-            <li><a href="https://www.facebook.com/futbolelpredio/?locale=es_LA" target="_blank"><img class="iconos-footer" src="../assets/imagenes/facebook.png"></a></li>
+            <li>
+                <a href="https://maps.app.goo.gl/ZAsVju9LQAhJrLug7" target="_blank"><img class="iconos-footer" src="../assets/imagenes/mapa.png"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ligaprofesionalafa/?hl=es-la" target="_blank"><img class="iconos-footer" src="../assets/imagenes/instagram.png"></a>
+            </li>
+            <li>
+                <a href="https://wa.me/3516218599" target="_blank"><img class="iconos-footer" src="../assets/imagenes/whatsapp.png"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/futbolelpredio/?locale=es_LA" target="_blank"><img class="iconos-footer" src="../assets/imagenes/facebook.png"></a>
+            </li>
         </ul>
 
         <p class="p-footer">&#169; Copyright Leandro Di Martino.

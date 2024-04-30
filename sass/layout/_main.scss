@@ -4,7 +4,7 @@ main{
         text-align: center;
         background-color:map-get($colores, colorFondoSecundario);
         color:map-get($colores, colorFondo);
-        padding: 1.25rem ;
+        padding: 1.25rem;
     }
     h2{
         text-align: center;
@@ -29,6 +29,18 @@ main{
         font-size: 1.5625rem;
         color:map-get($colores, colortexto) ;
     }
+    .parrafos{
+        text-align: center;
+        background-color: map-get($colores, colorFondoSecundario);
+        width: 80%;
+        margin: auto;
+        padding: 1.25rem;
+        border-radius: .3125rem;
+        p{
+            color: map-get($colores, colorFondo);
+            font-size: 1.25rem;
+        }
+    }
     .div-iframe{
         text-align: center;
         width: 100%;
@@ -38,4 +50,51 @@ main{
             margin-top: 1.25rem;
         }
     }
+    .grid-reserva{
+        .img-grid-reserva1{
+            width: 21.875rem;
+            height: 18.75rem;
+            img{
+                width: 21.875rem;
+                height: 18.75rem;
+            }
+        }
+        .img-grid-reserva2{
+            width:21.875rem;
+            height: 18.75rem;
+            img{
+                width: 21.875rem;
+                height: 18.75rem;
+            }
+        }
+        .img-grid-reserva3{
+            width: 21.875rem;
+            height: 18.75rem;
+            img{
+                width: 21.875rem;
+                height: 18.75rem;
+            }
+        }
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 25rem;
+        .div-card{
+            width: 28.125rem;
+            height: 23.125rem;
+            background-color: map-get($colores, colorFondoSecundario);
+            img{
+                width: 28.125rem;
+                height: 18.75rem;
+            }
+            h4{
+                text-align: center;
+                font-size: 2.5rem;
+            }
+        }
+    }
 }
+
+

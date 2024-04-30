@@ -11,6 +11,7 @@
 @import "./layout/form";
 @import "./layout/footer";
 @import "./layout/gridcontacto";
+@import "./layout/gridreserva";
 
 /*components*/
 
@@ -19,6 +20,9 @@
 @import "./components/animaciones";
 
 /*medias*/
+@media(max-width:1225px){
+@import "./layout/mediaQuerry/media1225";
+}
 
 @media(max-width:1024px){
     @import "./layout/mediaQuerry/media1024";
@@ -45,7 +49,7 @@
 }
 
 
-/*modificar boton y agregar mixin falta*/
+
 
 
 

@@ -1,16 +1,21 @@
 @media (max-width: 768px){
-
     header{
-        .img-header{ 
-            width: 6.25rem;
-            height: 4.6875rem;
-        }
-        nav{
-            .list-nav{
-                gap: .9375rem;
-                li{
-                    a{
-                        font-size: 1.125rem;
+        height: 5rem;
+        .back{
+            .menu{
+                .img-header{ 
+                    width: 6.25rem;
+                    height: 4.6875rem;
+                }
+                nav{
+                    .list-nav{
+                        gap: 1.25rem;
+                        li{
+                            a{
+                                font-size: 1.25rem;
+                                padding: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -30,6 +35,11 @@
         .parrafos-pag{
             font-size: 1.125rem;
         }
+        .parrafos{
+            p{
+                font-size: 1.25rem;
+            }
+        }
         iframe{
             width:70%
         }
@@ -44,7 +54,96 @@
                 }
             }
         }
+        .cards{
+            height: 18.75rem;
+            .div-card{
+                width: 15.625rem;
+                height: 15.625rem;
+                img{
+                    width: 15.625rem;
+                    height: 12.5rem;
+                }
+                h4{
+                    text-align: center;
+                    font-size: 1.875rem;
+                }
+            }
+        }
+        .div-grid-contacto{
+            height: 31.25rem;
+            .form-contacto{
+                width: 15.625rem;
+                height: 25.625rem;
+                padding: 1.25rem;
+                border-radius: 1.5625rem;
+                margin: auto;
+                .contact{
+                    margin-bottom: 1.5625rem;
+                }
+            }
+            .div-ul-contacto{
+                width: 15.625rem;
+                height: 7.5rem;
+                padding: 1.25rem;
+                border-radius: 1.5625rem;
+                .ul-contacto{
+                    gap:3.125rem;
+                    li{
+                        a{
+                            img{
+                                width: 2.1875rem;
+                                height: 2.1875rem;
+                            }
+                        }
+                    }
+                }
+            }  
+            .div-parrafo-contacto{
+                width: 15.625rem;
+                height:15rem;
+                padding: 1.875rem;
+                border-radius: 1.5625rem;
+                margin-top: 2.625rem;
+                p{
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        section{
+            .grid-reserva{
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+                height: 50rem;
+                margin-bottom: 1.25rem;
+                .img-grid-reserva1{
+                    width: 28.125rem;
+                    height: 16.25rem;
+                    img{
+                        width: 28.125rem;
+                        height: 16.25rem;
+                    }
+                }
+                .img-grid-reserva2{
+                    width:28.125rem;
+                    height: 16.25rem;
+                    img{
+                        width: 28.125rem;
+                        height: 16.25rem;
+                    }
+                }
+                .img-grid-reserva3{
+                    width: 28.125rem;
+                    height:16.25rem;
+                    img{
+                        width: 28.125rem;
+                        height: 16.25rem;
+                    }
+                }
+            }
+        }
     }
+
 
     footer{
         .list-footer{
@@ -55,47 +154,6 @@
                         height: 2.1875rem;
                     }
                 }
-            }
-        }
-    }
-
-    .div-grid-contacto{
-        height: 31.25rem;
-        .form-contacto{
-            width: 15.625rem;
-            height: 25.625rem;
-            padding: 1.25rem;
-            border-radius: 1.5625rem;
-            margin: auto;
-            .contact{
-                margin-bottom: 1.5625rem;
-            }
-        }
-        .div-ul-contacto{
-            width: 15.625rem;
-            height: 7.5rem;
-            padding: 1.25rem;
-            border-radius: 1.5625rem;
-            .ul-contacto{
-                gap:3.125rem;
-                li{
-                    a{
-                        img{
-                            width: 2.1875rem;
-                            height: 2.1875rem;
-                        }
-                    }
-                }
-            }
-        }  
-        .div-parrafo-contacto{
-            width: 15.625rem;
-            height:15rem;
-            padding: 1.875rem;
-            border-radius: 1.5625rem;
-            margin-top: 2.625rem;
-            p{
-                font-size: 1.125rem;
             }
         }
     }

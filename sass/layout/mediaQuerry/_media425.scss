@@ -1,25 +1,18 @@
 @media (max-width:425px){
-    header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding: 0;
-        .img-header{
-            width: 5rem;
-            height: 5rem;
-        }
-        nav{
-            .list-nav{
-                gap: .6875rem;
-                li{
-                    a{ 
-                        font-size:.75rem;
+    header{
+        .back{
+            .menu{
+                .navbar{
+                    .list-nav{
+                        li{
+                            a{
+                                padding: 5px 0;
+                            }
+                        }
                     }
                 }
             }
-        } 
+        }
     }
 
     main{
@@ -33,11 +26,11 @@
             font-size: .875rem;
         }
         .img-1{
-            height:16.25rem;
+            height:18.75rem;
             width: 100%;
             padding: 0;
             img{
-                height: 15rem;
+                height: 17.5rem;
                 width:100%;
                 border: none;
             }
@@ -46,6 +39,78 @@
             width: 100%;
             height: 12.5rem;
             padding-bottom: none;
+        }
+        .cards{
+            .div-card{
+                height: 18.75rem;
+                img{
+                    height: 16.875rem;
+                }
+                h4{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .div-grid-contacto{
+            display: block;
+            height: 50rem;
+            .div-parrafo-contacto{
+                width: 100%;
+                height: 11.875rem;
+                padding: 1.25rem;
+                margin: auto;
+                border-radius: 0;
+            }
+            .div-ul-contacto{
+                width: 70%;
+                height: 6.25rem;
+                margin: auto;
+                margin-top: 1.25rem;
+                padding: .3125rem;
+                border-radius: 0;
+                margin-top: .625rem;
+            }
+            .ul-contacto{
+                gap:1.875rem;
+            }
+            .form-contacto{
+                width: 70%;
+                height: 28.125rem;
+                padding: 1.875rem;
+                margin: auto;
+                margin-top: 1.25rem;
+                border-radius: 0;
+            }
+        }
+        section{
+            .grid-reserva{
+                height: 45rem;
+                margin-bottom: 1.25rem;
+                .img-grid-reserva1{
+                    width: 100%;
+                    height: 14.375rem;
+                    img{
+                        width: 100%;
+                        height: 14.375rem;
+                    }
+                }
+                .img-grid-reserva2{
+                    width:100%;
+                    height: 14.375rem;
+                    img{
+                        width: 100%;
+                        height: 14.375rem;
+                    }
+                }
+                .img-grid-reserva3{
+                    width: 100%;
+                    height:14.375rem;
+                    img{
+                        width: 100%;
+                        height: 14.375rem;
+                    }
+                }
+            }
         }
     }
 
@@ -59,8 +124,8 @@
             li{
                 a{
                     .iconos-footer{
-                    height:25px;
-                    width: 25px;
+                        height:25px;
+                        width: 25px;
                     }
                 }
             }
@@ -70,42 +135,11 @@
         }
     }
 
-    .div-grid-contacto{
-        display: block;
-        height: 50rem;
-        .div-parrafo-contacto{
-            width: 100%;
-            height: 11.875rem;
-            padding: 1.25rem;
-            margin: auto;
-            border-radius: 0;
-        }
-        .div-ul-contacto{
-            width: 70%;
-            height: 6.25rem;
-            margin: auto;
-            margin-top: 1.25rem;
-            padding: .3125rem;
-            border-radius: 0;
-            margin-top: .625rem;
-        }
-        .ul-contacto{
-            gap:1.875rem;
-        }
-        .form-contacto{
-            width: 70%;
-            height: 28.125rem;
-            padding: 1.875rem;
-            margin: auto;
-            margin-top: 1.25rem;
-            border-radius: 0;
-        }
-    }
-
     .button-reserva{
-        padding: .0625rem;
-        .button-reserva a{
+        padding: .0625rem; 
+        a{
             font-size: .75rem;
         }
     }
+    
 }

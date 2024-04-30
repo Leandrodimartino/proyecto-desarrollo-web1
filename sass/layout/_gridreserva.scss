@@ -1,0 +1,26 @@
+.grid-reserva{
+    display: grid;
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "div1 div2 div3"
+    "div1 div2 div3"
+    "div1 div2 div3"
+    "div1 div2 div3";
+}
+
+.img-grid-reserva1{
+    grid-area: div1;
+}
+
+.img-grid-reserva2{
+    grid-area: div2;
+}
+
+.img-grid-reserva3{
+    grid-area: div3;
+}

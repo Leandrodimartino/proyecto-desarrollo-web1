@@ -1,24 +1,41 @@
 @media (max-width:590px){
-    header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding: 0;
-        nav{
-            .list-nav{
-                gap: .5rem;
-                a{
-                    font-size: .9375rem;
+    header{
+        .back{
+            padding: 40px 0;
+            .menu{
+                justify-content:space-between;
+                padding: 0 .625rem;
+                label{
+                    display: initial;
+                }
+                .navbar{
+                    position:absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background-color: map-get($colores, colorFondo);
+                    display: none;
+                    .list-nav{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            a{
+                                padding: 10px 0;
+                                color:map-get($colores, colorFondoSecundario);
+                            }
+                        }
+                    }
                 }
             }
         }
+            #menu:checked ~ .navbar{
+                display: initial;
+            }
     }
 
     main{
         h1{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
         h2{
             font-size: 1.25rem;
@@ -40,11 +57,101 @@
             margin: .3125rem;
             font-size: 1.25rem;
         }
+        .parrafos{
+            width: 100%;
+            p{
+                font-size: 1.25rem;
+            }
+        }
         .div-iframe{
             width: 100%;
             text-align: center;
             iframe{
                 width:100%;
+            }
+        }
+        .cards{
+            height: 43.75rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 1.875rem;
+            .div-card{
+                width: 100%;
+                height: 21.875rem;
+                img{
+                    width: 100%;
+                    height: 18.75rem;
+                }
+                h4{
+                    text-align: center;
+                    font-size: 1.875rem;
+                }
+            }
+        }
+        .div-grid-contacto{
+            display: flex;
+            flex-direction: column;
+            height: 50rem;
+            .div-parrafo-contacto{
+                width: 100%;
+                height: 9.375rem;
+                margin: auto;
+                border-radius: 0;
+                p{
+                    font-size: 1.25rem;
+                }
+            }
+            .div-ul-contacto{
+                width: 70%;
+                height: 6.25rem;
+                margin: auto;
+                margin-top: 1.25rem;
+                padding: .3125rem;
+                border-radius: .625rem;
+                margin-top: .625rem;
+            }
+            .form-contacto{
+                width: 70%;
+                height: 28.125rem;
+                padding: 1.875rem;
+                margin: auto;
+                margin-top: 1.25rem;
+                border-radius: .625rem;
+            }
+        }
+        section{
+            .grid-reserva{
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+                height: 50rem;
+                margin-bottom: 1.25rem;
+                .img-grid-reserva1{
+                    width: 100%;
+                    height: 16.25rem;
+                    img{
+                        width: 100%;
+                        height: 16.25rem;
+                    }
+                }
+                .img-grid-reserva2{
+                    width:100%;
+                    height: 16.25rem;
+                    img{
+                        width: 100%;
+                        height: 16.25rem;
+                    }
+                }
+                .img-grid-reserva3{
+                    width: 100%;
+                    height:16.25rem;
+                    img{
+                        width: 100%;
+                        height: 16.25rem;
+                    }
+                }
             }
         }
     }
@@ -61,38 +168,6 @@
                     }
                 }
             }
-        }
-    }
-
-
-    .div-grid-contacto{
-        display: block;
-        height: 50rem;
-        .div-parrafo-contacto{
-            width: 100%;
-            height: 9.375rem;
-            margin: auto;
-            border-radius: 0;
-            p{
-                font-size: 1.25rem;
-            }
-        }
-        .div-ul-contacto{
-            width: 70%;
-            height: 6.25rem;
-            margin: auto;
-            margin-top: 1.25rem;
-            padding: .3125rem;
-            border-radius: .625rem;
-            margin-top: .625rem;
-        }
-        .form-contacto{
-            width: 70%;
-            height: 28.125rem;
-            padding: 1.875rem;
-            margin: auto;
-            margin-top: 1.25rem;
-            border-radius: .625rem;
         }
     }
 }
