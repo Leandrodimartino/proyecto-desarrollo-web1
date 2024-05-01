@@ -568,7 +568,7 @@ footer {
           display: flex;
           flex-direction: column; }
           header .back .menu .navbar .list-nav li a {
-            padding: 10px 0;
+            padding: 1.25rem 0;
             color: grey; }
   header #menu:checked ~ .navbar {
     display: initial; }
@@ -672,11 +672,15 @@ footer {
 
 @media (max-width: 425px) and (max-width: 425px) {
   header .back .menu .navbar .list-nav li a {
-    padding: 5px 0; }
+    font-size: 1rem; }
   main h1 {
     font-size: 1rem; }
   main h2 {
     font-size: .875rem; }
+  main .subtitle-principal {
+    margin-bottom: 6.25rem;
+    margin-top: 6.25rem;
+    line-height: 2rem; }
   main .parrafos-pag {
     font-size: .875rem; }
   main .img-1 {
