@@ -74,6 +74,9 @@ main {
     font-size: 1.875rem;
     text-align: center;
     margin: 1.875rem; }
+  main .subtitle-principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2.5rem; }
   main .img-1 {
     text-align: center;
     width: 100%;
@@ -780,6 +783,7 @@ footer {
   main h2 {
     font-size: 1rem; }
   main .subtitle-principal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 6.25rem;
     margin-top: 6.25rem;
     line-height: 2rem; }
