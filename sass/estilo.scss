@@ -1,11 +1,9 @@
-/*utilities*/
+
 @import "./utilities/maps";
 @import "./utilities/mixins";
 
-/*archivos de base*/
 @import "./base/reset";
 
-/*layout*/
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/form";
@@ -13,13 +11,11 @@
 @import "./layout/gridcontacto";
 @import "./layout/gridreserva";
 
-/*components*/
 
 @import "./components/divboton";
 @import "./components/transition";
 @import "./components/animaciones";
 
-/*medias*/
 @media(max-width:1225px){
 @import "./layout/mediaQuerry/media1225";
 }
@@ -42,6 +38,10 @@
 
 @media(max-width:425px){
     @import "./layout/mediaQuerry/media425";
+}
+
+@media(max-width:375px){
+@import "./layout/mediaQuerry/media320";
 }
 
 @media (max-width: 320px){
